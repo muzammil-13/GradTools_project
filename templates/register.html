@@ -1,0 +1,27 @@
+{% load static %}
+{% include 'navbar.html' %}
+
+{% block content %}
+
+<div>
+<h1>Registration page</h1>
+<!-- Registration Start -->
+<form action="register" method="post">
+    {% csrf_token %}
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="password">Confirm Password:</label>
+        <input type="password" id="c-password" name="confirm_password" required>
+
+        <button type="submit">Register</button>
+    </form>
+<!-- Registration End -->
+</div>
+
+{% endblock %}
+
+{% include 'footer.html' %}

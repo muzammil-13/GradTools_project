@@ -1,0 +1,27 @@
+{% load static %}
+<!-- Category Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <div class="text-center mb-5">
+                <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Courses</h5>
+                <h1>Explore All Courses</h1>
+            </div>
+
+            <div class="row">
+                {% for course in courses %}
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="cat-item position-relative overflow-hidden rounded mb-2">
+                        <img class="img-fluid" src="{{course.image.url}}" style="height:100px; width:100px" alt="image ORM">
+                        <a class="cat-overlay text-white text-decoration-none" href="">
+                            <h4 class="text-white font-weight-medium">{{course.name}}</h4>
+                        </a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- Category Start -->

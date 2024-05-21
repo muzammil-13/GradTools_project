@@ -1,0 +1,26 @@
+
+/*Bored api activity*/
+        /* Basic card styling */
+        .card {
+            width: 400px;
+            background-color: #44425A;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px auto;
+        }
+
+        /* Button styling */
+        #getActivity {
+            background-color: #FF6600;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        /* Center the button */
+        #news-api-container {
+            text-align: center;
+        }

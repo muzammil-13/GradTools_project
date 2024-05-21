@@ -1,0 +1,28 @@
+{% load static %}
+
+{% block metadescription %}
+GradTools School Store Login page
+{% endblock %}
+
+{% block title %}
+Login Page
+{% endblock %}
+
+{% block content %}
+<div class="container">
+
+    <h2>Login</h2>
+  <form method="post">
+    {% csrf_token %}
+    <label for="username">Username:</label>
+    <input type="text" name="username" id="username" required><br>
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password" required><br>
+    <button type="submit">Login</button>
+
+    <h4>New User? <a href="/register">Register</a></h4>
+
+  </form>
+
+</div>
+{% endblock %}
